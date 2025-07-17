@@ -1,15 +1,7 @@
 <template>
   <div class="tw-flex tw-items-center tw-justify-center tw-relative tw-px-4">
-    <div class="tw-max-w-[400px] tw-h-[800px] tw-w-full tw-bg-white">
-      <div class="tw-flex tw-gap-3 tw-items-center tw-px-4 tw-mt-3">
-        <NuxtLink to="/">
-          <img
-            @click="toBack"
-            class="tw-w-[16px] tw-h-[16px]"
-            src="../public/leftarrow.png"
-            alt=""
-          />
-        </NuxtLink>
+    <div class="tw-max-w-[400px] tw-h-[800px] tw-w-full tw-bg-white ">
+      <div class="tw-pl-14 tw-mt-3">
         <h1 class="tw-text-[20px] tw-font-semibold tw-text-[#343434]">
           Account and card
         </h1>
@@ -139,12 +131,12 @@
 <script setup lang="ts">
 import { ref } from "vue";
 const type = ref("account");
-function toBack() {
-  window.parent.postMessage(
-    { action: "resize", width: "330px", height: "316px" },
-    "http://localhost:3000"
-  );
-}
+// function toBack() {
+//   window.parent.postMessage(
+//     { action: "toBack", url:'"http://localhost:3000' },
+//     "http://localhost:3000"
+//   );
+// }
 </script>
 
 <style scoped></style>

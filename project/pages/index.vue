@@ -120,7 +120,7 @@
 <script setup lang="ts">
 function sendInfo() {
   window.parent.postMessage(
-    {action:'resize', width: "430", height: "700" },
+    {action:'changePage', url:'accountandcard'},
     "http://localhost:3000"
   );
 }
