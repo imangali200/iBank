@@ -17,7 +17,7 @@ import { useRoute } from "vue-router";
 const route = useRoute();
 
 const url = computed(() => {
-  const value = "http://localhost:3001/" + route.query.url;
+  const value = "https://i-bank-ubvt.vercel.app/" + route.query.url;
   if (typeof value === "string") {
     return value;
   }

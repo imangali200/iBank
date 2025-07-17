@@ -121,7 +121,7 @@
 function sendInfo() {
   window.parent.postMessage(
     {action:'changePage', url:'accountandcard'},
-    "http://localhost:3000"
+    "https://i-bank-wheat.vercel.app"
   );
 }
 </script>

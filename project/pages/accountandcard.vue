@@ -131,12 +131,6 @@
 <script setup lang="ts">
 import { ref } from "vue";
 const type = ref("account");
-// function toBack() {
-//   window.parent.postMessage(
-//     { action: "toBack", url:'"http://localhost:3000' },
-//     "http://localhost:3000"
-//   );
-// }
 </script>
 
 <style scoped></style>
