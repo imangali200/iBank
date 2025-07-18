@@ -12,9 +12,9 @@
 import { useRoute } from "vue-router";
 
 const route = useRoute();
-const config = useRuntimeConfig()
-console.log('this is config')
-console.log(config.public.baseUrl)
+const config = useRuntimeConfig();
+console.log("this is config");
+console.log("meta", import.meta.env.VITE_BASE_URL);
 
 const url = computed(() => {
   const value = config.public.baseUrl + route.query.url;
