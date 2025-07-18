@@ -28,7 +28,7 @@
 const config = useRuntimeConfig()
 console.log(config.public.baseUrl)
 function toHome(){
-    window.parent.location.href = 'http://localhost:3000'
+    window.parent.location.href = 'https://i-bank-31r4f68q1-imangali.vercel.app/'
 }
 </script>
 

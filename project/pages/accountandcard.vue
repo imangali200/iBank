@@ -139,7 +139,7 @@
 import { ref } from "vue";
 const type = ref("account");
 function goToback(){
-  window.parent.location.href = 'http://localhost:3000'
+  window.parent.location.href = 'https://i-bank-31r4f68q1-imangali.vercel.app/'
 }
 </script>
 

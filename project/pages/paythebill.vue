@@ -99,7 +99,7 @@
 
 <script setup lang="ts">
 function goToback() {
-  window.parent.location.href = "http://localhost:3000";
+  window.parent.location.href = "https://i-bank-31r4f68q1-imangali.vercel.app/";
 }
 function toInternetBill() {
   window.parent.postMessage({ action: "changePage", url: "internetBill" }, "*");
