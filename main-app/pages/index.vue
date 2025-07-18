@@ -13,7 +13,7 @@
         <div class="tw-bg-white">
           <iframe
             class="tw-z-50"
-            src="http://localhost:3001/"
+            src="i-bank-ubvt.vercel.app"
             :width="rewidth"
             :height="reHeight"
             frameborder="0"
