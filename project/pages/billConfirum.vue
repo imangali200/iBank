@@ -1,5 +1,5 @@
 <template>
-  <div class="tw-flex tw-items-center tw-justify-center tw-px-4 tw-h-screen">
+  <div class="tw-flex tw-items-center tw-justify-centertw-h-screen">
     <div
       class="tw-max-w-[400px] tw-h-full tw-flex tw-flex-col tw-w-full t tw-bg-white tw-px-4"
     >
@@ -28,7 +28,7 @@
 const config = useRuntimeConfig()
 console.log(config.public.baseUrl)
 function toHome(){
-    window.parent.location.href = 'https://i-bank-31r4f68q1-imangali.vercel.app/'
+    window.parent.location.href = 'i-bank-wheat.vercel.app'
 }
 </script>
 

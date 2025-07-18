@@ -1,5 +1,5 @@
 <template>
-  <div class="tw-flex tw-items-center tw-justify-center tw-px-4">
+  <div class="tw-flex tw-items-center tw-justify-center">
     <div
       class="tw-max-w-[400px] tw-h-[800px] tw-flex tw-gap-4 tw-flex-col tw-w-full tw-bg-white tw-px-4"
     >
@@ -29,7 +29,7 @@
 
 <script setup lang="ts">
 function goToback() {
-  window.parent.location.href = "https://i-bank-31r4f68q1-imangali.vercel.app/";
+  window.parent.location.href = "i-bank-wheat.vercel.app";
 }
 </script>
 

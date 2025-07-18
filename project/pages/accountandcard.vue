@@ -1,6 +1,6 @@
 <template>
-  <div class="tw-flex tw-items-center tw-justify-center tw-relative tw-px-4">
-    <div class="tw-max-w-[400px] tw-h-[800px] tw-w-full tw-bg-white">
+  <div class="tw-flex tw-items-center tw-justify-center tw-relative">
+    <div class="tw-max-w-[400px] tw-h-[800px] tw-w-full tw-bg-white tw-px-4">
       <div class="tw-flex tw-items-center tw-gap-8 tw-mt-3 tw-pl-3">
         <img
           @click="goToback"
@@ -139,7 +139,7 @@
 import { ref } from "vue";
 const type = ref("account");
 function goToback(){
-  window.parent.location.href = 'https://i-bank-31r4f68q1-imangali.vercel.app/'
+  window.parent.location.href = 'i-bank-wheat.vercel.app'
 }
 </script>
 
