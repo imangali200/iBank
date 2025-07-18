@@ -6,4 +6,22 @@ export default defineNuxtConfig({
   imports: {
     autoImport: true,
   },
+  build: {
+    transpile: ["vuetify"],
+  },
+  app: {
+    head: {
+      link: [
+        {
+          rel: "stylesheet",
+          href: "https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css",
+        },
+      ],
+    },
+  },
+  runtimeConfig: {
+    public: {
+      baseUrl: process.env.base_Url,
+    },
+  },
 });

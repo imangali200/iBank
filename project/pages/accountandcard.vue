@@ -1,11 +1,18 @@
 <template>
   <div class="tw-flex tw-items-center tw-justify-center tw-relative tw-px-4">
-    <div class="tw-max-w-[400px] tw-h-[800px] tw-w-full tw-bg-white ">
-      <div class="tw-pl-14 tw-mt-3">
+    <div class="tw-max-w-[400px] tw-h-[800px] tw-w-full tw-bg-white">
+      <div class="tw-flex tw-items-center tw-gap-8 tw-mt-3 tw-pl-3">
+        <img
+          @click="goToback"
+          class="tw-w-[16px] tw-h-[16px]"
+          src="../public/leftarrow.png"
+          alt=""
+        />
         <h1 class="tw-text-[20px] tw-font-semibold tw-text-[#343434]">
           Account and card
         </h1>
       </div>
+
       <div
         class="tw-flex tw-flex-col tw-items-center tw-justify-center tw-my-5 tw-gap-4"
       >
@@ -131,6 +138,9 @@
 <script setup lang="ts">
 import { ref } from "vue";
 const type = ref("account");
+function goToback(){
+  window.parent.location.href = 'http://localhost:3000'
+}
 </script>
 
 <style scoped></style>

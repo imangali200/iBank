@@ -17,7 +17,8 @@
           >Account and Card</span
         >
       </NuxtLink>
-      <div
+
+      <NuxtLink
         class="tw-w-[100px] tw-h-[100px] tw-flex tw-items-center tw-justify-center tw-flex-col tw-rounded-[15px] tw-p-2 tw-bg-[#0000000D] tw-gap-1"
       >
         <img
@@ -28,8 +29,11 @@
         <span class="tw-text-[#979797] tw-text-[12px] tw-text-center"
           >Transfer</span
         >
-      </div>
-      <div
+      </NuxtLink>
+
+      <NuxtLink
+        to="/drewpage"
+        @click="toDrew"
         class="tw-w-[100px] tw-h-[100px] tw-flex tw-items-center tw-justify-center tw-flex-col tw-rounded-[15px] tw-p-2 tw-bg-[#0000000D] tw-gap-1"
       >
         <img
@@ -40,8 +44,9 @@
         <span class="tw-text-[#979797] tw-text-[12px] tw-text-center"
           >Withdraw</span
         >
-      </div>
+      </NuxtLink>
       <div
+        @click="PrePaid"
         class="tw-w-[100px] tw-h-[100px] tw-flex tw-items-center tw-justify-center tw-flex-col tw-rounded-[15px] tw-p-2 tw-bg-[#0000000D] tw-gap-1"
       >
         <img
@@ -54,6 +59,7 @@
         >
       </div>
       <div
+        @click="internetBill"
         class="tw-w-[100px] tw-h-[100px] tw-flex tw-items-center tw-justify-center tw-flex-col tw-rounded-[15px] tw-p-2 tw-bg-[#0000000D] tw-gap-1"
       >
         <img
@@ -120,8 +126,17 @@
 <script setup lang="ts">
 function sendInfo() {
   window.parent.postMessage(
-    {action:'changePage', url:'accountandcard'},
-    "https://i-bank-wheat.vercel.app"
+    { action: "changePage", url: "accountandcard" },
+    "*"
   );
+}
+function toDrew() {
+  window.parent.postMessage({ action: "changePage", url: "drewpage" }, "*");
+}
+function PrePaid() {
+  window.parent.postMessage({ action: "changePage", url: "prePaid" }, "*");
+}
+function internetBill() {
+  window.parent.postMessage({ action: "changePage", url: "paythebill" }, "*");
 }
 </script>

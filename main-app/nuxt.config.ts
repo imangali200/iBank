@@ -6,4 +6,9 @@ export default defineNuxtConfig({
   imports: {
     autoImport: true,
   },
+  runtimeConfig: {
+    public: {
+      baseUrl: process.env.BASE_URL,
+    },
+  },
 });
