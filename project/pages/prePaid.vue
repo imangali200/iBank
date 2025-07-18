@@ -161,10 +161,7 @@ const cards = [
   { title: "Freedom Card (7744 **** 4321)", value: "774433334321" },
 ];
 function toConfirm() {
-  window.parent.postMessage(
-    { action: "changePage", url: "confirm" },
-    "http://localhost:3000"
-  );
+  window.parent.postMessage({ action: "changePage", url: "confirm" }, "*");
 }
 </script>
 
