@@ -1,5 +1,5 @@
 <template>
-    <div class="tw-flex tw-items-center tw-justify-center tw-px-4">
+    <div class="tw-flex tw-items-center tw-justify-center">
         <div class="tw-max-w-[400px] tw-w-full tw-bg-[#3629B7] tw-z-1">
             <div class="tw-flex tw-justify-between tw-items-center tw-px-2 tw-pb-3 tw-h-[120px]">
                 <div class="tw-flex tw-gap-3 tw-items-center ">
