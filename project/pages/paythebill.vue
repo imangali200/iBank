@@ -97,9 +97,9 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
 function goToback() {
-  window.parent.location.href = "https://i-bank-wheat.vercel.app/";
+  window.parent.location.href = import.meta.env.VITE_BASE_URL;
 }
 function toInternetBill() {
   window.parent.postMessage({ action: "changePage", url: "internetBill" }, "*");

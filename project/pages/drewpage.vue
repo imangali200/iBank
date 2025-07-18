@@ -144,7 +144,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
 const cards = [
   { title: "Kaspi Card (4411 **** 1234)", value: "441100001234" },
   { title: "Halyk Card (5522 **** 5678)", value: "552211115678" },
@@ -158,7 +158,7 @@ function drewSucces() {
   window.parent.postMessage({ action: "changePage", url: "drewSuccess" }, "*");
 }
 function goToback() {
-  window.parent.location.href = "https://i-bank-wheat.vercel.app/";
+  window.parent.location.href = import.meta.env.VITE_BASE_URL;
 }
 </script>
 

@@ -135,11 +135,11 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { ref } from "vue";
 const type = ref("account");
-function goToback(){
-  window.parent.location.href = 'https://i-bank-wheat.vercel.app/'
+function goToback() {
+  window.parent.location.href = import.meta.env.VITE_BASE_URL;
 }
 </script>
 

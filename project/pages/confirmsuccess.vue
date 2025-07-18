@@ -1,5 +1,5 @@
 <template>
-  <div class="tw-flex tw-items-center tw-justify-center  tw-h-screen">
+  <div class="tw-flex tw-items-center tw-justify-center tw-h-screen">
     <div
       class="tw-max-w-[400px] tw-h-full tw-flex tw-flex-col tw-w-full tw-bg-white tw-px-4"
     >
@@ -16,7 +16,7 @@
       </div>
       <button
         @click="toConfirm"
-        class="tw-h-[48px] tw-w-full tw-mx-auto tw-bg-[#3629B7] tw-text-white tw-rounded-md  tw-mt-4"
+        class="tw-h-[48px] tw-w-full tw-mx-auto tw-bg-[#3629B7] tw-text-white tw-rounded-md tw-mt-4"
       >
         Confirm
       </button>
@@ -24,9 +24,9 @@
   </div>
 </template>
 
-<script setup lang="ts">
-function toConfirm(){
-    window.parent.location.href = 'https://i-bank-wheat.vercel.app/'
+<script setup>
+function toConfirm() {
+  window.parent.location.href = import.meta.env.VITE_BASE_URL;
 }
 </script>
 

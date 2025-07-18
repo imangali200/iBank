@@ -147,12 +147,12 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { ref } from "vue";
 const selected = ref("");
 const personSelected = ref("");
 function goToback() {
-  window.parent.location.href = "https://i-bank-wheat.vercel.app/";
+  window.parent.location.href = import.meta.env.VITE_BASE_URL;
 }
 const cards = [
   { title: "Kaspi Card (4411 **** 1234)", value: "441100001234" },
