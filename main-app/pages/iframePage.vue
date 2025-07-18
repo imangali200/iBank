@@ -13,10 +13,8 @@ import { useRoute } from "vue-router";
 
 const route = useRoute();
 
-const config = useRuntimeConfig();
-console.log("Base URL:", config.public.baseUrl);
 const url = computed(() => {
-  const value = config.public.baseUrl + route.query.url;
+  const value = "https://i-bank-ubvt.vercel.app/"+ route.query.url;
   if (typeof value === "string") {
     return value;
   }
