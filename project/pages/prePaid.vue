@@ -152,7 +152,7 @@ import { ref } from "vue";
 const selected = ref("");
 const personSelected = ref("");
 function goToback() {
-  window.parent.location.href = "https://i-bank-31r4f68q1-imangali.vercel.app/";
+  window.parent.location.href = "https://i-bank-wheat.vercel.app/";
 }
 const cards = [
   { title: "Kaspi Card (4411 **** 1234)", value: "441100001234" },

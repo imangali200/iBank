@@ -139,7 +139,7 @@
 import { ref } from "vue";
 const type = ref("account");
 function goToback(){
-  window.parent.location.href = 'i-bank-wheat.vercel.app'
+  window.parent.location.href = 'https://i-bank-wheat.vercel.app/'
 }
 </script>
 

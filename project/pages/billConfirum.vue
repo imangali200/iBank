@@ -28,7 +28,7 @@
 const config = useRuntimeConfig()
 console.log(config.public.baseUrl)
 function toHome(){
-    window.parent.location.href = 'i-bank-wheat.vercel.app'
+    window.parent.location.href = 'https://i-bank-wheat.vercel.app/'
 }
 </script>
 

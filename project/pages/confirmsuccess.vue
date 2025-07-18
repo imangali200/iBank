@@ -26,7 +26,7 @@
 
 <script setup lang="ts">
 function toConfirm(){
-    window.parent.location.href = 'i-bank-wheat.vercel.app'
+    window.parent.location.href = 'https://i-bank-wheat.vercel.app/'
 }
 </script>
 
